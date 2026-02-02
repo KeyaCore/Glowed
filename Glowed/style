@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* kotak chat utama */
+.chat-box {
+    width: 350px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: white;
+}
+
+/* header */
+.chat-header {
+    background: #6c63ff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* area pesan */
+#chat-area {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    background: #121212;
+}
+
+/* bubble pesan */
+.pesan {
+    background: #6c63ff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+/* input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: #1e1e1e;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.chat-input button {
+    margin-left: 8px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+}
