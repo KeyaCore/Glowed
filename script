@@ -1,0 +1,21 @@
+// ambil tempat chat
+const chat = document.getElementById("chat");
+
+// fungsi kirim pesan
+function kirimPesan() {
+    const input = document.getElementById("pesan");
+
+    // kalau kosong, jangan kirim
+    if (input.value === "") return;
+
+    // tampilkan pesan
+    chat.innerHTML += "<p>🧑 Kamu: " + input.value + "</p>";
+
+    // kosongkan input
+    input.value = "";
+
+    // scroll ke bawah
+    chat.scrollTop = chat.scrollHeight;
+}
+
+console.log("Website komunikasi siap ✅");
